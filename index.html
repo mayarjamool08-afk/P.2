@@ -1,0 +1,133 @@
+<!DOCTYPE html><html lang="ar" dir="rtl">
+</script>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ملخصات الدروس</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Tajawal", sans-serif;
+      background: linear-gradient(135deg, #e0f7fa, #f1f8e9);
+      background-attachment: fixed;
+      color: #333;
+      text-align: center;
+      position: relative;
+      overflow-x: hidden;
+    }
+    header {
+      padding: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      margin: 0;
+      color: #2e7d32;
+    }
+    .files-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1.5rem;
+      margin: 3rem auto;
+      max-width: 600px;
+      position: relative;
+      z-index: 2;
+    }
+    .file-card {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      transition: transform 0.2s ease;
+    }
+    .file-card:hover {
+      transform: translateY(-5px);
+    }
+    .file-card h2 {
+      margin: 0 0 1rem;
+      font-size: 1.2rem;
+      color: #1b5e20;
+    }
+    .download-btn {
+      display: inline-block;
+      padding: 0.8rem 1.5rem;
+      background: #43a047;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background 0.3s ease;
+    }
+    .download-btn:hover {
+      background: #2e7d32;
+    }
+    footer {
+      margin: 2rem 0;
+      font-size: 0.9rem;
+      color: #666;
+      position: relative;
+      z-index: 2;
+    }/* رسومات الخلفية */
+.bg-shapes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+.circle {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(76, 175, 80, 0.1);
+  animation: float 10s infinite ease-in-out;
+}
+.circle.small {
+  width: 80px;
+  height: 80px;
+  top: 10%;
+  left: 5%;
+}
+.circle.medium {
+  width: 150px;
+  height: 150px;
+  bottom: 15%;
+  right: 10%;
+}
+.circle.large {
+  width: 250px;
+  height: 250px;
+  top: 40%;
+  left: -100px;
+}
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+}
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-shapes">
+    <div class="circle small"></div>
+    <div class="circle medium"></div>
+    <div class="circle large"></div>
+  </div>  <header>
+    <h1>📚 ملخصات الدروس</h1>
+    <p>هنا ستجد ملخصات المواد الدراسية جاهزة للتحميل</p>
+  </header>  <main class="files-container">
+    <!-- بطاقة ملف -->
+    <div class="file-card">
+      <h2>ملخص الوحدة الثانية فيزياء</h2>
+      <a href="https://www.mediafire.com/file/ptzvfandmxz8i5q/%25D9%2585%25D9%2584%25D8%25AE%25D8%25B5_%25D8%25A7%25D9%2584%25D9%2588%25D8%25AD%25D8%25AF%25D8%25A9_%25D8%25A7%25D9%2584%25D8%25AB%25D8%25A7%25D9%2586%25D9%258A%25D8%25A9_%25D9%2581%25D9%258A%25D8%25B2%25D9%258A%25D8%25A7%25D8%25A1_%25D8%25A8%25D9%2583%25D8%25A7%25D9%2584%25D9%2588%25D8%25B1%25D9%258A%25D8%25A7.pdf/file" target="_blank" class="download-btn">⬇ تنزيل الملف</a>
+    </div><!-- لملفات إضافية انسخ الكتلة أعلاه وغير الاسم والرابط -->
+
+  </main>  <footer>
+    <p>© 2025 جميع الحقوق محفوظة</p>
+  </footer>
+</body>
+</html>
